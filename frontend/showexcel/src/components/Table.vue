@@ -9,7 +9,6 @@
     >
 
       <el-table-column label="入库单" align="center">
-
         <el-table-column
             prop="no"
             label="序号"
@@ -121,9 +120,18 @@ export default {
         }
     ).then((res)=>{
       this.tableData=res.data
-      console.log("success")
+      this.$notify({
+        title: 'success',
+        type: 'success',
+        duration: 2500
+      })
+
     }).catch((error)=>{
-      console.log(error)
+      this.$notify({
+        title: error.message,
+        type: 'error',
+        duration: 2500
+      })
     })
   }
   ,

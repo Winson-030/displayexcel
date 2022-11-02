@@ -8,20 +8,14 @@
           <upload-page></upload-page>
         </el-col>
       </el-row>
-
-
-
     </el-main>
     <Table></Table>
   </el-container>
-
-
 </div>
 
 </template>
 
 <script>
-
 import UploadPage from "@/components/UploadPage";
 import Table from "@/components/Table";
 export default {
@@ -29,8 +23,6 @@ export default {
   components: {
     UploadPage,
     Table
-
-
   },
   data(){
     return {
@@ -38,17 +30,6 @@ export default {
       show: true,
     }
   },
-  // watch:{
-  //   '$route'(to,from){
-  //     if (from.path === '/' || from.path === 'table'){
-  //
-  //       if (to.path ==='/table'|| to.path === '/'){
-  //         this.show = false;
-  //         this.transition = 'slide-right';
-  //       }
-  //     }
-  //   }
-  // }
 }
 </script>
 
@@ -59,18 +40,8 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-
-  /*color: #2c3e50;*/
-
 }
-.child-view {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  transition: all .5s cubic-bezier(.55, 0, .1, 1);
-}
+
 .el-header, .el-footer {
 
   color: #333;
